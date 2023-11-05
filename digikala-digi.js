@@ -504,7 +504,6 @@ for (let i = 0; i < more.length; i++) {
     more[i].parentNode.classList.toggle("active");
   });
 }
-transitionDelay;
 
 function changeback1() {
   document.querySelector(".titrbala-matn-brand").style.display = "block";
