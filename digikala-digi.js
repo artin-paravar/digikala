@@ -202,9 +202,8 @@ function border4() {
   border4.style.border = "2px solid #e0e0e2";
   let border5 = document.getElementById("border2");
   border5.style.border = "2px solid #e0e0e2";
-}
+} //
 
-// ; //
 const swiperpishnahad = document.querySelector(".swiperpishnahad"),
   firstimg = swiperpishnahad.querySelectorAll(".div-a-opshen")[0];
 const arrowbtns = document.querySelectorAll(".div-felesh");
@@ -250,8 +249,6 @@ swiperpishnahad.addEventListener("mousedown", dragStart);
 swiperpishnahad.addEventListener("mousemove", dragging);
 swiperpishnahad.addEventListener("mouseup", dragStop);
 swiperpishnahad.addEventListener("mouseleave", dragStop);
-
-//
 
 const swiperpishnahad2 = document.querySelector(".mahbob"),
   firstimg2 = swiperpishnahad2.querySelectorAll("img")[0];
@@ -700,3 +697,19 @@ function deactive() {
   var body = document.querySelector("body");
   body.style.overflow = body.style.overflow === "hidden" ? "auto" : "hidden";
 }
+
+//js
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 1,
+
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});
