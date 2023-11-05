@@ -185,7 +185,7 @@ function border3() {
   let border4 = document.getElementById("border2");
   border4.style.border = "2px solid #e0e0e2";
   let border5 = document.getElementById("border4");
-  border5.style.border = "2px solid #e0e0e2";
+  border5.stydragle.border = "2px solid #e0e0e2";
 }
 function border4() {
   let border1 = document.getElementById("border4");
