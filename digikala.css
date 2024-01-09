@@ -3645,6 +3645,7 @@ body {
   display: flex;
   overflow: hidden;
   width: 100%;
+  cursor: pointer;
 }
 .h3-3 {
   font-size: 18px;
@@ -3723,9 +3724,10 @@ body {
 /* jostejo script */
 .jostejo-js {
   width: 100%;
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
+
   height: 100%;
   z-index: 999;
   height: 100%;

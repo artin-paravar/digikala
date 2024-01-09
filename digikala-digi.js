@@ -721,7 +721,7 @@ function jostejo() {
     jostejoJs.style.transform = "translateY(100%)";
   }
   var body = document.querySelector("body");
-  // body.style.overflow = body.style.overflow === "auto" ? "hidden" : "auto";
+  body.style.overflow = body.style.overflow === "hidden" ? "auto" : "hidden";
 }
 function jostejo2() {
   let jostejoJs = document.getElementById("jostejo-js");
@@ -731,5 +731,5 @@ function jostejo2() {
     jostejoJs.style.transform = "translateY(0%)";
   }
   var body = document.querySelector("body");
-  // body.style.overflow = body.style.overflow === "hidden" ? "auto" : "hidden";
+  body.style.overflow = body.style.overflow === "hidden" ? "auto" : "hidden";
 }
