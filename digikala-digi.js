@@ -495,12 +495,11 @@ swiperpishnahad6.addEventListener("mouseup", dragStop6);
 swiperpishnahad6.addEventListener("mouseleave", dragStop6);
 //
 
-let more = document.querySelectorAll(".span-moshahede-bishtar");
-for (let i = 0; i < more.length; i++) {
-  more[i].addEventListener("click", function () {
-    more[i].parentNode.classList.toggle("active");
-  });
-}
+const more = document.querySelector(".span-moshahede-bishtar");
+
+more.addEventListener("click", () => {
+  more.parentNode.classList.toggle("active");
+});
 
 function changeback1() {
   document.querySelector(".titrbala-matn-brand").style.display = "block";
@@ -713,3 +712,24 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+function jostejo() {
+  let jostejoJs = document.getElementById("jostejo-js");
+  if (jostejoJs.style.transform === "translateY(100%)") {
+    jostejoJs.style.transform = "translateY(0%)";
+  } else {
+    jostejoJs.style.transform = "translateY(100%)";
+  }
+  var body = document.querySelector("body");
+  // body.style.overflow = body.style.overflow === "auto" ? "hidden" : "auto";
+}
+function jostejo2() {
+  let jostejoJs = document.getElementById("jostejo-js");
+  if (jostejoJs.style.transform === "translateY(0%)") {
+    jostejoJs.style.transform = "translateY(100%)";
+  } else {
+    jostejoJs.style.transform = "translateY(0%)";
+  }
+  var body = document.querySelector("body");
+  // body.style.overflow = body.style.overflow === "hidden" ? "auto" : "hidden";
+}
