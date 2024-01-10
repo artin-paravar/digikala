@@ -3730,8 +3730,8 @@ body {
   height: 100%;
   cursor: auto;
   z-index: 999;
-
   height: 100%;
+  direction: rtl;
   background-color: white;
   transition: 0.3s all;
 }
