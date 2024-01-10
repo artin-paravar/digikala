@@ -723,13 +723,3 @@ function jostejo() {
   var body = document.querySelector("body");
   body.style.overflow = body.style.overflow === "hidden" ? "auto" : "hidden";
 }
-function jostejo2() {
-  let jostejoJs = document.getElementById("jostejo-js");
-  if (jostejoJs.style.transform === "translateY(0%)") {
-    jostejoJs.style.transform = "translateY(100%)";
-  } else {
-    jostejoJs.style.transform = "translateY(0%)";
-  }
-  var body = document.querySelector("body");
-  body.style.overflow = body.style.overflow === "hidden" ? "auto" : "hidden";
-}
