@@ -1304,8 +1304,6 @@ body {
   cursor: default;
 }
 .kol-bistar {
-  width: auto;
-  height: auto;
   background-color: white;
   border-radius: 15px;
   position: absolute;
@@ -1347,30 +1345,28 @@ body {
   margin-left: 10px;
 }
 .zirmatnbala {
-  width: 821px;
-  height: 680px;
+  width: 100%;
+  height: 100%;
+  margin: 10px 0 0 0;
+  max-height: 650px;
   overflow-y: scroll;
   direction: rtl;
 }
 .zirmatnbala > .kolesh {
-  width: 813px;
-  height: 851px;
-  margin-top: 16px;
-  display: flex;
-  flex-direction: column;
+  width: 100%;
+  height: 100%;
 }
 .zirmatnbala > .kolesh > .itemha-2 {
-  width: 764px;
-  height: 90px;
-  margin: 0 auto;
-  padding-top: 10px;
-  display: flex;
+  display: grid;
+  width: 100%;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: 100px;
 }
 .zirmatnbala > .kolesh > .itemha-2 > .item1-2 {
-  width: 127px;
+  width: 100% !important;
   height: 79px;
   text-decoration: none;
-  display: inline-block;
+
   color: black;
   display: flex;
   flex-direction: column;
@@ -1395,15 +1391,12 @@ body {
 }
 
 .akharghazye {
-  width: 764px;
-  height: 565px;
-  margin: 0 auto;
-  display: flex;
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
 .akharghazye > .item-1 {
-  width: 350px;
-  height: 58px;
-  display: inline-block;
   border: 1px solid #c9c9ceb0;
   border-radius: 15px;
   padding: 12px;
@@ -1411,7 +1404,7 @@ body {
   text-decoration: none;
   color: black;
   z-index: 0;
-  margin-left: 15px;
+  margin-right: 15px;
 }
 .akharghazye > .item-1 > img {
   width: 52px;
@@ -1424,7 +1417,7 @@ body {
 }
 .akharghazye > .item-1 > .matn1-2 > div {
   display: flex;
-  width: 286px;
+  width: 100%;
   justify-content: space-between;
   height: 32px;
   align-items: center;
@@ -3189,6 +3182,12 @@ body {
   .head22 {
     display: none;
   }
+  .jostejo-js {
+    display: none !important;
+    pointer-events: none;
+    user-select: none;
+  }
+
   .swiper {
     height: 300px;
   }
@@ -3309,7 +3308,57 @@ body {
   .footer {
     display: none;
   }
-
+  .bishtar {
+    width: 100%;
+    height: 100%;
+  }
+  .kol-bistar {
+    width: 100%;
+    height: 100%;
+    position: static !important;
+    top: auto !important;
+    left: auto !important;
+    transform: none !important;
+  }
+  .matnbala {
+    width: 100%;
+  }
+  .zirmatnbala {
+    height: 100% !important;
+    max-height: none;
+    /* padding: 0 20px; */
+  }
+  .kolesh {
+    width: 100% !important;
+    height: 100% !important;
+    max-height: none;
+  }
+  .itemha-2 {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-rows: repeat(3, 100px) !important;
+  }
+  .akharghazye {
+    grid-template-columns: repeat(1, 1fr) !important;
+    padding: 0 0 60px 0;
+    gap: 0;
+    width: 100%;
+  }
+  .item-1 {
+    width: 100% !important;
+    padding: 15px 0 !important;
+    border: unset !important;
+    border-bottom: 1px solid #c9c9ceb0 !important;
+    margin: 0 !important;
+    border-radius: 0 !important;
+  }
+  .akharghazye > .item-1 > .matn1-2 > div {
+    width: 99%;
+  }
+  .matn1-2 {
+    width: 100% !important;
+  }
   .container3 {
     display: none;
   }
