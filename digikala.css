@@ -1297,7 +1297,7 @@ body {
   background-color: #74747a77;
   width: 100%;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   right: 0px;
   top: 0;
   z-index: 3;
@@ -1306,7 +1306,7 @@ body {
 .kol-bistar {
   background-color: white;
   border-radius: 15px;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   z-index: 600;
@@ -1439,151 +1439,80 @@ body {
 
 .container7 {
   width: 100%;
-  height: 260px;
   max-width: 1336px;
   background-color: #ef3a50;
   border-radius: 16px;
   padding: 20px 0;
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  direction: rtl;
-  overflow: hidden;
+  max-height: 260px;
+  z-index: 2;
 }
-
-.image-felash:nth-child(1) {
-  width: 24px;
-  height: 24px;
-}
-.image-felash:nth-child(2) {
-  width: 24px;
-  height: 24px;
-}
-.felesh-itemha {
-  position: absolute;
-  display: flex;
+.pishnahad {
+  padding: 12px 16px;
+  height: 100%;
   width: 100%;
-  max-width: 1360px;
-  height: auto;
-  align-items: center;
-  justify-content: space-between;
+  display: inline-block;
+  text-decoration: none;
 }
-.swiperpishnahad > .felesh-itemha > div:nth-child(1) {
-  width: 40px;
-  height: 40px;
-  background-color: white;
-  border-radius: 50%;
-  position: absolute;
-  box-shadow: 0px 0px 0px 1px #6d6d6d5d;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transform: translate(0px, 120px);
-}
-.swiperpishnahad > .felesh-itemha > div:nth-child(2) {
-  width: 40px;
-  height: 40px;
-  background-color: white;
-  border-radius: 50%;
-  position: absolute;
-  box-shadow: 0px 0px 0px 1px #6d6d6d5d;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  transform: translate(38px, 120px);
-  left: 0;
-}
-
-.swiperpishnahad::-webkit-scrollbar {
-  display: none;
-}
-
-.container7 > .swiperpishnahad {
-  width: 100%;
-  height: 260px;
-  display: grid;
-  grid-auto-flow: column;
-  overflow: hidden;
-  scroll-snap-type: x mandatory;
-  grid-auto-columns: (calc(100% / 3) -12px);
-  scroll-behavior: smooth;
-
-  scrollbar-width: 0;
-  direction: rtl;
-  gap: 2px;
-}
-.swiperpishnahad.dragging {
-  scroll-behavior: auto;
-  scroll-snap-type: none;
-}
-.dragging > .pishnahad {
-  user-select: none;
-  direction: ltr;
-}
-
 .pishnahadimage {
-  width: 150px;
-  height: 150px;
-  margin-top: 12px;
+  width: 100%;
+  height: 100%;
+  max-width: 150px;
+  padding: 10px 0;
+  max-height: 150px;
 }
 .geymat {
+  direction: ltr;
   display: flex;
-  flex-direction: row;
-  padding: 10px 15px 0px 15px;
+  align-items: center;
+  margin-top: 15px;
 }
-#toman {
+.geymat > img {
   width: 16px;
   height: 16px;
   margin-right: 5px;
 }
 .price {
-  font-size: 16px;
-  margin: 0;
-  padding: 0;
-  margin-right: 30px;
-}
-.takhfif {
-  font-size: 12px;
-  background-color: #ef3a50;
-  padding: 3px 10px 1px 10px;
-  color: white;
-  border-radius: 16px;
-}
-.div-a-opshen {
-  display: flex;
-  width: 100%;
-}
-.pishnahad {
-  text-align: center;
-  background-color: white;
-  height: 260px;
-  width: 182px;
-  text-decoration: none;
-  direction: ltr;
   color: black;
 }
-.pishnahadlogo {
-  width: 145px;
-  height: 235px;
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-.pishnahadlogo-all {
-  width: 173px;
-  height: 260px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.takhfif {
+  background-color: #ef3a50;
+  padding: 1px 8px;
+  color: white;
+  border-radius: 12px;
+  font-size: 12px;
+  margin-left: auto;
 }
 .geymat-ghabl {
-  color: #c8c8ce;
+  color: #76767975;
   font-size: 12px;
+  display: inline-block;
+  width: 90%;
+  display: flex;
+  padding: 5px 0;
+  margin-left: 30px;
+  align-items: center;
+  justify-content: flex-end;
   text-decoration: line-through;
-  text-align: left;
-  margin: 10px 33px;
+}
+.pishnahadlogo {
+  max-height: 260px;
+  user-select: none;
+  padding: 10px 20px;
+}
+.pishnahadlogo > img {
+  width: 110px;
+  height: 100%;
+}
+.swiper-wrapper {
+  margin: 0 !important;
+}
+.tanzim-shgheftangiz {
+  max-height: 260px;
+  max-width: 182px;
+  user-select: none;
+}
+.mySwiper2 {
+  max-height: 280px;
 }
 /* <!-- end container7 --> */
 
@@ -3428,9 +3357,19 @@ body {
   }
   .container7 {
     height: 258px;
-    padding: 0;
+    width: 100%;
+    padding: 17px 0 10px 0;
     display: flex;
     align-items: center;
+  }
+  .swiper-slide {
+    width: 200px;
+  }
+  .tanzim-shgheftangiz {
+    min-width: 140px !important;
+  }
+  .mySwiper2 {
+    width: 100%;
   }
   .div-a-opshen {
     height: 219px;
