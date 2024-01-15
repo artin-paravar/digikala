@@ -1632,10 +1632,10 @@
                           </div>
 
  <div class="margin-auto-0">
-                            <div class="container9-2">
+                            <div class="container9-2 swiper mySwiper3">
                              <h3 class="h3-3">دسته‌بندی‌های دیجی‌کالا</h3>
-                         <div class="dasteha2">
-                          <div class="dasteha-item1">
+                         <div  class="dasteha2 swiper-wrapper">
+                          <div class="dasteha-item1 swiper-slide">
                             <div class="daste2">
                               <img src="img/موبایل.webp" alt="">
                               <p>موبایل</p>
@@ -1651,7 +1651,7 @@
                       
                            
                           </div>
-                          <div class="dasteha-item1">
+                          <div class="dasteha-item1 swiper-slide">
                             <div class="daste2">
                               <img src="img/مد و پوشاک.webp" alt="">
                               <p>مد و پوشاک</p>
@@ -1666,7 +1666,7 @@
                                     <p>کتاب،لوازم تحریر و هنر</p>
                                     </div>
                           </div>
-                          <div class="dasteha-item1">
+                          <div class="dasteha-item1 swiper-slide">
                       
                            
                            
@@ -1685,7 +1685,7 @@
                                         <p>ورزش و سفر</p>
                                         </div>
                           </div>
-                        <div class="dasteha-item1">
+                        <div class="dasteha-item1 swiper-slide">
                           <div class="daste2">
                             <img src="img/ابزار الات.webp" alt="">
                             <p>ابزارالات و تجهیزات</p>
@@ -1700,7 +1700,7 @@
                                 <p>محصولات بومی محلی</p>
                                 </div>
                         </div>
-                        <div class="dasteha-item1">
+                        <div class="dasteha-item1 swiper-slide">
                           <div class="daste2">
                             <img src="img/کارت هدیه.webp" alt="">
                             <p>کارت هدیه</p>
@@ -1712,7 +1712,7 @@
                                  </div>      
                          
                                                    </div>              
-                                                   </div>
+                                            </div>
    <!-- end container9 -->
    <!-- start baner3 -->
    <div class="margin-auto-0 max-1023-auto">
@@ -3123,7 +3123,14 @@ var swiper = new Swiper(".mySwiper2", {
     prevEl: ".swiper-button-prev2",
   },
 });
+//sevomi swiper
 
+var swiper = new Swiper(".mySwiper3", {
+      slidesPerView: 3,
+      spaceBetween: 10,
+      freeMode: true,
+
+    });
 
 // Media Queries with JavaScript
 
@@ -3165,6 +3172,42 @@ x.addEventListener("change", function() {
 });
 
 // 
+function myFunction2(x2) {
+  if (x2.matches) { // If media query matches
+    var swiper = new Swiper(".mySwiper2", {
+  slidesPerView: 2,
+  spaceBetween: 3,
+  freeMode: true,
+  navigation: {
+    nextEl: ".swiper-button-next2",
+    prevEl: ".swiper-button-prev2",
+  },
+});
+  } else {
+    var swiper = new Swiper(".mySwiper2", {
+  slidesPerView: 6.5,
+  spaceBetween: 3,
+  freeMode: true,
+  navigation: {
+    nextEl: ".swiper-button-next2",
+    prevEl: ".swiper-button-prev2",
+  },
+});
+  }
+}
+
+// Create a MediaQueryList object
+let x2 = window.matchMedia(" (max-width: 400px)")
+
+// Call listener function at run time
+myFunction2(x2);
+
+// Attach listener function on state changes
+x2.addEventListener("change", function() {
+  myFunction2(x2);
+});
+
+
 function myFunction3(x3) {
   if (x3.matches) { // If media query matches
     var swiper = new Swiper(".mySwiper2", {
@@ -3271,10 +3314,19 @@ x5.addEventListener("change", function() {
   myFunction5(x5);
 });
 // 
-function myFunction2(x2) {
-  if (x2.matches) { // If media query matches
-    var swiper = new Swiper(".mySwiper2", {
-  slidesPerView: 2,
+
+
+
+// shegheft anghiz
+
+
+
+// dasteha
+
+function myFunction6(x6) {
+  if (x6.matches) { // If media query matches
+    var swiper = new Swiper(".mySwiper3", {
+  slidesPerView: 4,
   spaceBetween: 3,
   freeMode: true,
   navigation: {
@@ -3284,7 +3336,7 @@ function myFunction2(x2) {
 });
   } else {
     var swiper = new Swiper(".mySwiper2", {
-  slidesPerView: 6.5,
+  slidesPerView: 3,
   spaceBetween: 3,
   freeMode: true,
   navigation: {
@@ -3296,20 +3348,16 @@ function myFunction2(x2) {
 }
 
 // Create a MediaQueryList object
-let x2 = window.matchMedia(" (max-width: 400px)")
+let x6 = window.matchMedia(" (min-width: 700px) and (max-width: 1023px)")
 
 // Call listener function at run time
-myFunction2(x2);
+myFunction6(x6);
 
 // Attach listener function on state changes
-x2.addEventListener("change", function() {
-  myFunction2(x2);
+x6.addEventListener("change", function() {
+  myFunction6(x6);
 });
 
-
-
-
-// shegheft anghiz
 
     </script>
   </body>
