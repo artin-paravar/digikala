@@ -1836,70 +1836,66 @@
 
     <div class="star-mahbob">
 
-    <div class="star">
+    <div class="star ">
       <h3 class="h3-2">محبوب‌ترین برندها </h3>
       <img src="img/start.svg" alt="">
     </div>
  
-   <div class="mahbob">
-          <div class="felesh-item2">
-        <div id="right" class="div-felesh2">
-          <img class="image-felash2" src="img/svgexport-sliderfelesh-right.svg" alt="">
-        </div>
-        <div id="left" class="div-felesh2">
-          <img class="image-felash2" src="img/svgexport-sliderfeleshleft.svg" alt="">
-        </div>
-      </div>
-  <a class="mahbob-slider"  draggable="false">
+   <div class="swiper mySwiper5 ">
+<div class="mahbob swiper-wrapper">
+  <a class="mahbob-slider swiper-slide"  >
   <img src="img/panter.jpg" alt="">
 </a>
-<a class="mahbob-slider"  draggable="false">
+<a class="mahbob-slider swiper-slide"  >
 <img src="img/mrrad.jpg" alt="">
 </a>
-<a class="mahbob-slider"  draggable="false">
+<a class="mahbob-slider swiper-slide"  >
 <img src="img/yatimenor.jpg" alt="">
  </a>
-<a class="mahbob-slider"  draggable="false">
+<a class="mahbob-slider swiper-slide"  >
 <img src="img/pakshoma.png" alt="">
 </a>
-<a class="mahbob-slider"  draggable="false">
+<a class="mahbob-slider swiper-slide"  >
   <img src="img/howei.png" alt="">
 </a>
-<a class="mahbob-slider"  draggable="false">
+<a class="mahbob-slider swiper-slide"  >
   <img src="img/kale.png" alt="">
 </a>
-<a class="mahbob-slider"  draggable="false">
+<a class="mahbob-slider swiper-slide"  >
   <img src="img/kingstart'.png" alt="">
 </a>
-<a class="mahbob-slider"  draggable="false">
+<a class="mahbob-slider swiper-slide"  >
   <img src="img/persli'.png" alt="">
 </a>
-<a class="mahbob-slider"  draggable="false">
+<a class="mahbob-slider swiper-slide"  >
   <img src="img/kingstart'.png" alt="">
 </a>
-<a class="mahbob-slider"  draggable="false">
+<a class="mahbob-slider swiper-slide"  >
   <img src="img/yatimenor.jpg" alt="">
 </a>
-<a class="mahbob-slider"  draggable="false">
+<a class="mahbob-slider swiper-slide"  >
   <img src="img/mrrad.jpg" alt="">
 </a>
-<a class="mahbob-slider"  draggable="false">
+<a class="mahbob-slider swiper-slide"  >
   <img src="img/panter.jpg" alt="">
 </a>
-<a class="mahbob-slider"  draggable="false">
+<a class="mahbob-slider swiper-slide"  >
   <img src="img/howei.png" alt="">
 </a>
-<a class="mahbob-slider"  draggable="false">
+<a class="mahbob-slider swiper-slide"  >
   <img src="img/kale.png" alt="">
 </a>
-<a class="mahbob-slider"  draggable="false">
+<a class="mahbob-slider swiper-slide"  >
   <img src="img/howei.png" alt="">
 </a>
 
-
-
+     </div>
+     <div class="swiper-button3">
+       <div class="swiper-button-next3"></div>
+       <div class="swiper-button-prev3"></div>
      </div>
     </div>
+  </div>
    </div>
   </div>
    <!-- end container11-->
@@ -3129,7 +3125,19 @@ var swiper = new Swiper(".mySwiper3", {
       spaceBetween: 0,
       freeMode: true,
     });
-// Media Queries with JavaScript
+
+//panjomi
+
+var swiper = new Swiper(".mySwiper5", {
+      slidesPerView: 9,
+      spaceBetween: 0,
+      freeMode: true,
+      navigation: {
+          nextEl: ".swiper-button-next3",
+    prevEl: ".swiper-button-prev3",
+  },
+    });
+
 
 
 // shegheft anghiz
@@ -3332,7 +3340,7 @@ function myFunction6(x6) {
   },
 });
   } else {
-    var swiper = new Swiper(".mySwiper2", {
+    var swiper = new Swiper(".mySwiper3", {
   slidesPerView: 3,
   spaceBetween: 3,
   freeMode: true,
@@ -3505,9 +3513,149 @@ myFunction11(x11);
 x11.addEventListener("change", function() {
   myFunction11(x11);
 });
+// mahbob
+
+function myFunction12(x12) {
+  if (x12.matches) { // If media query matches
+    var swiper = new Swiper(".mySwiper5", {
+      slidesPerView: 4,
+      spaceBetween: 0,
+      freeMode: true,
+      navigation: {
+          nextEl: ".swiper-button-next3",
+    prevEl: ".swiper-button-prev3",
+  },
+    })
+  } else {
+    var swiper = new Swiper(".mySwiper5", {
+      slidesPerView: 9,
+      spaceBetween: 0,
+      freeMode: true,
+      navigation: {
+          nextEl: ".swiper-button-next3",
+    prevEl: ".swiper-button-prev3",
+  },
+    })
+  }
+}
+
+// Create a MediaQueryList object
+let x12 = window.matchMedia(" (max-width: 400px)")
+
+// Call listener function at run time
+myFunction12(x12);
+
+// Attach listener function on state changes
+x12.addEventListener("change", function() {
+  myFunction12(x12);
+});
+
+function myFunction13(x13) {
+  if (x13.matches) { // If media query matches
+    var swiper = new Swiper(".mySwiper5", {
+      slidesPerView: 5,
+      spaceBetween: 0,
+      freeMode: true,
+      navigation: {
+          nextEl: ".swiper-button-next3",
+    prevEl: ".swiper-button-prev3",
+  },
+    })
+  } else {
+    var swiper = new Swiper(".mySwiper5", {
+      slidesPerView: 9,
+      spaceBetween: 0,
+      freeMode: true,
+      navigation: {
+          nextEl: ".swiper-button-next3",
+    prevEl: ".swiper-button-prev3",
+  },
+    })
+  }
+}
+
+// Create a MediaQueryList object
+let x13 = window.matchMedia(" (max-width: 600px)")
+
+// Call listener function at run time
+myFunction13(x13);
+
+// Attach listener function on state changes
+x13.addEventListener("change", function() {
+  myFunction13(x13);
+});
+
 // 
+function myFunction14(x14) {
+  if (x14.matches) { // If media query matches
+    var swiper = new Swiper(".mySwiper5", {
+      slidesPerView: 7,
+      spaceBetween: 0,
+      freeMode: true,
+      navigation: {
+          nextEl: ".swiper-button-next3",
+    prevEl: ".swiper-button-prev3",
+  },
+    })
+  } else {
+    var swiper = new Swiper(".mySwiper5", {
+      slidesPerView: 9,
+      spaceBetween: 0,
+      freeMode: true,
+      navigation: {
+          nextEl: ".swiper-button-next3",
+    prevEl: ".swiper-button-prev3",
+  },
+    })
+  }
+}
 
+// Create a MediaQueryList object
+let x14 = window.matchMedia(" (max-width: 800px)")
 
+// Call listener function at run time
+myFunction14(x14);
+
+// Attach listener function on state changes
+x14.addEventListener("change", function() {
+  myFunction14(x14);
+});
+
+// 
+function myFunction15(x15) {
+  if (x15.matches) { // If media query matches
+    var swiper = new Swiper(".mySwiper5", {
+      slidesPerView: 8,
+      spaceBetween: 0,
+      freeMode: true,
+      navigation: {
+          nextEl: ".swiper-button-next3",
+    prevEl: ".swiper-button-prev3",
+  },
+    })
+  } else {
+    var swiper = new Swiper(".mySwiper5", {
+      slidesPerView: 9,
+      spaceBetween: 0,
+      freeMode: true,
+      navigation: {
+          nextEl: ".swiper-button-next3",
+    prevEl: ".swiper-button-prev3",
+  },
+    })
+  }
+}
+
+// Create a MediaQueryList object
+let x15 = window.matchMedia(" (max-width: 1023px)")
+
+// Call listener function at run time
+myFunction15(x15);
+
+// Attach listener function on state changes
+x15.addEventListener("change", function() {
+  myFunction15(x15);
+});
 
 
 
