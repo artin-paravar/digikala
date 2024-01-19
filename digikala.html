@@ -3101,13 +3101,47 @@
 //dovomin swiper
 
 var swiper = new Swiper(".mySwiper2", {
-  slidesPerView: 6.5,
+  slidesPerView: 2,
   spaceBetween: 3,
   freeMode: true,
   navigation: {
     nextEl: ".swiper-button-next2",
     prevEl: ".swiper-button-prev2",
   },
+  breakpoints: {
+    390: {
+            slidesPerView: 2.2,
+            spaceBetween: 3,
+          },
+        450: {
+            slidesPerView: 2.7,
+            spaceBetween: 3,
+          },
+          550: {
+            slidesPerView: 4,
+            spaceBetween: 3,
+          },
+          800: {
+            slidesPerView: 4.5,
+            spaceBetween: 3,
+          },
+          900: {
+            slidesPerView: 5,
+            spaceBetween: 3,
+          },
+          1040: {
+            slidesPerView: 5.6,
+            spaceBetween: 3,
+          },
+          1200: {
+            slidesPerView: 6.2,
+            spaceBetween: 3,
+          },
+          1336: {
+            slidesPerView: 6.5,
+            spaceBetween: 3,
+          },
+        },
 });
 //sevomi swiper
 
@@ -3136,193 +3170,9 @@ var swiper = new Swiper(".mySwiper5", {
           nextEl: ".swiper-button-next3",
     prevEl: ".swiper-button-prev3",
   },
-    });
-
-
-
-// shegheft anghiz
-function myFunction(x) {
-  if (x.matches) { // If media query matches
-    var swiper = new Swiper(".mySwiper2", {
-  slidesPerView: 5,
-  spaceBetween: 3,
-  freeMode: true,
-  navigation: {
-    nextEl: ".swiper-button-next2",
-    prevEl: ".swiper-button-prev2",
-  },
-});
-  } else {
-    var swiper = new Swiper(".mySwiper2", {
-  slidesPerView: 6.5,
-  spaceBetween: 3,
-  freeMode: true,
-  navigation: {
-    nextEl: ".swiper-button-next2",
-    prevEl: ".swiper-button-prev2",
-  },
-});
-  }
-}
-
-// Create a MediaQueryList object
-let x = window.matchMedia("(max-width: 1023px) ")
-
-// Call listener function at run time
-myFunction(x);
-
-// Attach listener function on state changes
-x.addEventListener("change", function() {
-  myFunction(x);
-});
-
-// 
-function myFunction2(x2) {
-  if (x2.matches) { // If media query matches
-    var swiper = new Swiper(".mySwiper2", {
-  slidesPerView: 2,
-  spaceBetween: 3,
-  freeMode: true,
-  navigation: {
-    nextEl: ".swiper-button-next2",
-    prevEl: ".swiper-button-prev2",
-  },
-});
-  } else {
-    var swiper = new Swiper(".mySwiper2", {
-  slidesPerView: 6.5,
-  spaceBetween: 3,
-  freeMode: true,
-  navigation: {
-    nextEl: ".swiper-button-next2",
-    prevEl: ".swiper-button-prev2",
-  },
-});
-  }
-}
-
-// Create a MediaQueryList object
-let x2 = window.matchMedia(" (max-width: 400px)")
-
-// Call listener function at run time
-myFunction2(x2);
-
-// Attach listener function on state changes
-x2.addEventListener("change", function() {
-  myFunction2(x2);
 });
 
 
-function myFunction3(x3) {
-  if (x3.matches) { // If media query matches
-    var swiper = new Swiper(".mySwiper2", {
-  slidesPerView: 4,
-  spaceBetween: 3,
-  freeMode: true,
-  navigation: {
-    nextEl: ".swiper-button-next2",
-    prevEl: ".swiper-button-prev2",
-  },
-});
-  } else {
-    var swiper = new Swiper(".mySwiper2", {
-  slidesPerView: 6.5,
-  spaceBetween: 3,
-  freeMode: true,
-  navigation: {
-    nextEl: ".swiper-button-next2",
-    prevEl: ".swiper-button-prev2",
-  },
-});
-  }
-}
-
-// Create a MediaQueryList object
-let x3 = window.matchMedia(" (max-width: 900px)")
-
-// Call listener function at run time
-myFunction3(x3);
-
-// Attach listener function on state changes
-x3.addEventListener("change", function() {
-  myFunction3(x3);
-});
-// 
-
-function myFunction4(x4) {
-  if (x4.matches) { // If media query matches
-    var swiper = new Swiper(".mySwiper2", {
-  slidesPerView: 3,
-  spaceBetween: 3,
-  freeMode: true,
-  navigation: {
-    nextEl: ".swiper-button-next2",
-    prevEl: ".swiper-button-prev2",
-  },
-});
-  } else {
-    var swiper = new Swiper(".mySwiper2", {
-  slidesPerView: 6.5,
-  spaceBetween: 3,
-  freeMode: true,
-  navigation: {
-    nextEl: ".swiper-button-next2",
-    prevEl: ".swiper-button-prev2",
-  },
-});
-  }
-}
-
-// Create a MediaQueryList object
-let x4 = window.matchMedia(" (max-width: 700px)")
-
-// Call listener function at run time
-myFunction4(x4);
-
-// Attach listener function on state changes
-x4.addEventListener("change", function() {
-  myFunction4(x4);
-});
-// 
-function myFunction5(x5) {
-  if (x5.matches) { // If media query matches
-    var swiper = new Swiper(".mySwiper2", {
-  slidesPerView: 2.5,
-  spaceBetween: 3,
-  freeMode: true,
-  navigation: {
-    nextEl: ".swiper-button-next2",
-    prevEl: ".swiper-button-prev2",
-  },
-});
-  } else {
-    var swiper = new Swiper(".mySwiper2", {
-  slidesPerView: 6.5,
-  spaceBetween: 3,
-  freeMode: true,
-  navigation: {
-    nextEl: ".swiper-button-next2",
-    prevEl: ".swiper-button-prev2",
-  },
-});
-  }
-}
-
-// Create a MediaQueryList object
-let x5 = window.matchMedia(" (max-width: 550px)")
-
-// Call listener function at run time
-myFunction5(x5);
-
-// Attach listener function on state changes
-x5.addEventListener("change", function() {
-  myFunction5(x5);
-});
-// 
-
-
-
-// shegheft anghiz
 
 
 
