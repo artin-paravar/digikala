@@ -1,3 +1,8 @@
+const span = document.getElementById("moshahede-bishtar");
+span.addEventListener("click", () => {
+  span.parentNode.classList.toggle("active");
+});
+
 function hideShow() {
   let div = document.getElementById("backgrounduser");
   if (div.style.display === "block") {
