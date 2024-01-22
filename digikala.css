@@ -9,7 +9,6 @@ body {
   padding: 0;
   box-sizing: border-box;
   font-family: iranyekan;
-  overflow: auto;
 }
 :root {
   --rangborder: #c9c9ce60;
@@ -389,23 +388,23 @@ body {
   height: 30px;
 }
 .serch-script-kol {
-  display: none;
   background-color: #0c0c0c80;
   width: 100%;
   height: 100vh;
   position: absolute;
   right: 0;
   top: 0;
-  transition: 0.3s all linear;
+
+  transition: 0.1s all linear;
 }
 .serch-script {
   background-color: white;
-  transition: 0.3s all linear;
+  transition: 0.1s all linear;
   width: 598px;
   height: 522px;
   position: absolute;
   top: 0;
-  display: none;
+
   transform: translate(0px, 10px);
   border-radius: 8px;
   box-shadow: 0px 0px 5px 0.5px rgba(109, 109, 109, 0.288);
@@ -669,14 +668,14 @@ body {
   height: 40px;
 }
 .ersalscript {
-  display: none;
   background-color: #74747a77;
   width: 100%;
-  height: 100vh;
-  position: absolute;
-  right: 0px;
-  top: 167px;
-  z-index: 1;
+  height: 100%;
+  position: fixed;
+  left: 0px;
+  transition: 0.2s all linear;
+  top: 0;
+  z-index: 99;
   cursor: default;
 }
 
@@ -688,7 +687,7 @@ body {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translate(-50%, -90%);
+  transform: translate(-50%, -50%);
   border-radius: 8px;
 }
 .ersalscriptasli > .item1 {
@@ -769,7 +768,6 @@ body {
   top: 7.5px;
   transform: translate(-50%, -50%) scale(0);
   border-radius: 50%;
-  /* transition: 300ms ease-in-out 0s; */
 }
 .radio:checked ~ .radio2::after {
   transform: translate(-50%, -50%) scale(1);
@@ -781,7 +779,6 @@ body {
   -ms-flex-align: center;
   display: -webkit-flex;
   -webkit-box-align: center;
-
   float: right;
   margin-right: 3px;
   font-size: 14px;
@@ -1012,6 +1009,7 @@ body {
   z-index: 500;
   visibility: hidden;
   opacity: 0;
+  transition: 0.1s all linear;
 }
 
 .dropdown-menu {
@@ -1024,6 +1022,7 @@ body {
   transform: translateX(-13px);
   direction: rtl;
   display: flex;
+  transition: 0.2s all linear;
   visibility: hidden;
   opacity: 0;
 }
@@ -1279,7 +1278,6 @@ body {
 }
 /* end countainer6 */
 .bishtar {
-  display: none;
   background-color: #74747a77;
   width: 100%;
   height: 100vh;
@@ -1288,6 +1286,7 @@ body {
   top: 0;
   z-index: 3;
   cursor: default;
+  transition: 0.2s all linear;
 }
 .kol-bistar {
   background-color: white;

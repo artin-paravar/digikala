@@ -12,56 +12,66 @@ function hideShow() {
   }
 }
 function hideShow2() {
-  let div2 = document.getElementById("ersalscript");
-  if (div2.style.display === "block") {
-    div2.style.display = "none";
+  let div3 = document.getElementById("ersalscript");
+  if (div3.style.opacity === "0" && div3.style.visibility === "hidden") {
+    div3.style.opacity = "1";
+    div3.style.visibility = "visible";
   } else {
-    div2.style.display = "block";
+    div3.style.opacity = "0";
+    div3.style.visibility = "hidden";
   }
   var body = document.querySelector("body");
   body.style.overflow = body.style.overflow === "hidden" ? "auto" : "hidden";
 }
 
 function hideShow3() {
-  let div2 = document.getElementById("bishtar");
-  if (div2.style.display === "block") {
-    div2.style.display = "none";
+  let div3 = document.getElementById("bishtar");
+  if (div3.style.opacity === "0" && div3.style.visibility === "hidden") {
+    div3.style.opacity = "1";
+    div3.style.visibility = "visible";
   } else {
-    div2.style.display = "block";
+    div3.style.opacity = "0";
+    div3.style.visibility = "hidden";
   }
-
   var body = document.querySelector("body");
   body.style.overflow = body.style.overflow === "hidden" ? "auto" : "hidden";
 }
 
 function hideShow4() {
   let div3 = document.getElementById("serch-script");
-  if (div3.style.display === "block") {
-    div3.style.display = "none";
+  if (div3.style.opacity === "0" && div3.style.visibility === "hidden") {
+    div3.style.opacity = "1";
+    div3.style.visibility = "visible";
   } else {
-    div3.style.display = "block";
+    div3.style.opacity = "0";
+    div3.style.visibility = "hidden";
   }
   let div4 = document.getElementById("serch-script-kol");
-  if (div4.style.display === "block") {
-    div4.style.display = "none";
+  if (div4.style.opacity === "0" && div4.style.visibility === "hidden") {
+    div4.style.visibility = "visible";
+    div4.style.opacity = "1";
   } else {
-    div4.style.display = "block";
+    div4.style.opacity = "0";
+    div4.style.visibility = "hidden";
   }
   var body = document.querySelector("body");
-  body.style.overflow = body.style.overflow === "hidden" ? "auto" : "hidden";
+  body.style.overflow = body.style.overflow === "auto" ? "hidden" : "auto";
 }
 function hideShow5() {
   let div3 = document.getElementById("serch-script-kol");
-  if (div3.style.display === "none") {
-    div3.style.display = "none";
+  if (div3.style.opacity === "0" && div3.style.visibility === "hidden") {
+    div3.style.visibility = "hidden";
+    div3.style.opacity = "0";
   } else {
-    div3.style.display = "none";
+    div3.style.opacity = "0";
+    div3.style.visibility = "hidden";
 
     let div4 = document.getElementById("serch-script");
-    if (div4.style.display === "none") {
-      div4.style.display = "none";
+    if (div4.style.opacity === "0" && div4.style.visibility === "hidden") {
+      div4.style.opacity = "0";
     } else {
-      div4.style.display = "none";
+      div4.style.opacity = "0";
+      div4.style.visibility = "hidden";
     }
     var body = document.querySelector("body");
     body.style.overflow = body.style.overflow == "auto" ? "auto" : "auto";
